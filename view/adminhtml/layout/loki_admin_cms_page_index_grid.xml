@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:View/Layout:etc/page_configuration.xsd">
+    <update handle="loki_admin_components_grid"/>
+
+    <head>
+        <title>YireoTraining ExampleLokiAdminCmsPage</title>
+    </head>
+
+    <body>
+        <referenceContainer name="content">
+            <block
+                name="loki_admin_cms_page.grid"
+                template="Yireo_LokiAdminComponents::grid.phtml">
+                <arguments>
+                    <argument name="namespace" xsi:type="string">cms_page_listing</argument>
+                    <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
+                    <argument name="provider_handler" xsi:type="string">repository</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="loki-admin.grid.actions">
+            <block name="add" template="Yireo_LokiAdminComponents::grid/action-buttons/button-add.phtml">
+                <arguments>
+                    <argument name="title" xsi:type="string">Add Page</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
