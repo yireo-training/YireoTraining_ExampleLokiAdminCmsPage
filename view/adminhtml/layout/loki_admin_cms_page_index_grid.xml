@@ -13,19 +13,10 @@
                 template="Yireo_LokiAdminComponents::grid.phtml">
                 <arguments>
                     <argument name="namespace" xsi:type="string">cms_page_listing</argument>
-                    <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
-                    <argument name="provider_handler" xsi:type="string">repository</argument>
+                    <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>
                 </arguments>
             </block>
         </referenceContainer>
-
-        <referenceBlock name="loki-admin.grid.actions">
-            <block name="add" template="Yireo_LokiAdminComponents::grid/action-buttons/button-add.phtml">
-                <arguments>
-                    <argument name="title" xsi:type="string">Add Page</argument>
-                </arguments>
-            </block>
-        </referenceBlock>
     </body>
 </page>

@@ -13,37 +13,9 @@
                 template="Yireo_LokiAdminComponents::form.phtml">
                 <arguments>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
-                    <argument name="provider_handler" xsi:type="string">repository</argument>
+                    <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>
                     <argument name="factory" xsi:type="string">Magento\Cms\Model\PageFactory</argument>
                 </arguments>
-
-                <block
-                    name="loki_admin_cms_page.form.inner" as="inner"
-                    template="Yireo_LokiAdminComponents::form/fieldset.phtml">
-                    <arguments>
-                        <argument name="label" xsi:type="string">Basic</argument>
-                    </arguments>
-
-                    <block
-                        name="loki_admin_cms_page.form.status" as="status"
-                        template="Yireo_LokiAdminComponents::form/field.phtml">
-                        <arguments>
-                            <argument name="label" xsi:type="string">Enabled</argument>
-                            <argument name="field_type" xsi:type="string">switch</argument>
-                            <argument name="required" xsi:type="boolean">true</argument>
-                        </arguments>
-                    </block>
-
-                    <block
-                        name="loki_admin_cms_page.form.name" as="name"
-                        template="Yireo_LokiAdminComponents::form/field.phtml">
-                        <arguments>
-                            <argument name="label" xsi:type="string">Page Name</argument>
-                            <argument name="field_type" xsi:type="string">text</argument>
-                            <argument name="required" xsi:type="boolean">true</argument>
-                        </arguments>
-                    </block>
-                </block>
             </block>
         </referenceContainer>
     </body>
