@@ -1,9 +1,9 @@
 # YireoTraining_ExampleLokiAdminCmsPage
 
-**This Magento 2 module does something spectaculair**
+**This Magento 2 module demos the usage of LokiAdminComponents**
 
 ### Installation
 ```bash
-composer require yireo-training/magento2-example-loki-admin-cms-page
+composer require yireo-training/magento2-example-loki-admin-cms-page@dev
 bin/magento module:enable YireoTraining_ExampleLokiAdminCmsPage
 ```
