@@ -14,7 +14,6 @@
                 <arguments>
                     <argument name="namespace" xsi:type="string">cms_page_listing</argument>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
-                    <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>
                 </arguments>
             </block>
         </referenceContainer>
