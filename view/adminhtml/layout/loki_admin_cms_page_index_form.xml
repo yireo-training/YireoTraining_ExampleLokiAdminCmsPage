@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:View/Layout:etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:View/Layout:etc/page_configuration.xsd">
     <update handle="loki_admin_components_form"/>
 
     <head>
@@ -15,6 +16,7 @@
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
                     <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>
                     <argument name="factory" xsi:type="string">Magento\Cms\Model\PageFactory</argument>
+                    <argument name="index_url" xsi:type="string">loki_admin_cms_page/index/grid</argument>
                 </arguments>
             </block>
         </referenceContainer>
