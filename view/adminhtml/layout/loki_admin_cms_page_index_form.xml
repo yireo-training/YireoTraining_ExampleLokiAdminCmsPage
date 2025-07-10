@@ -11,7 +11,7 @@
         <referenceContainer name="content">
             <block
                 name="loki_admin_cms_page.form"
-                template="Yireo_LokiAdminComponents::form.phtml">
+                template="Loki_AdminComponents::form.phtml">
                 <arguments>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
                     <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>

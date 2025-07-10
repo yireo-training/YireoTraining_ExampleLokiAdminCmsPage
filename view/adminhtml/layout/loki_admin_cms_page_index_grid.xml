@@ -10,7 +10,7 @@
         <referenceContainer name="content">
             <block
                 name="loki_admin_cms_page.grid"
-                template="Yireo_LokiAdminComponents::grid.phtml">
+                template="Loki_AdminComponents::grid.phtml">
                 <arguments>
                     <argument name="namespace" xsi:type="string">cms_page_listing</argument>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
