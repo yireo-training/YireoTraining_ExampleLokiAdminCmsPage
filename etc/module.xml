@@ -4,6 +4,7 @@
     <module name="YireoTraining_ExampleLokiAdminCmsPage">
         <sequence>
             <module name="Magento_Cms"/>
+            <module name="Magento_Backend"/>
             <module name="Loki_AdminComponents"/>
         </sequence>
     </module>
