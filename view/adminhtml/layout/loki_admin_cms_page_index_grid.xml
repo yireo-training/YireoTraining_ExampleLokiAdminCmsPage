@@ -14,6 +14,28 @@
                 <arguments>
                     <argument name="namespace" xsi:type="string">cms_page_listing</argument>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
+                    <argument name="columns" xsi:type="array">
+                        <item name="page_id" xsi:type="array">
+                            <item name="label" xsi:type="string">ID</item>
+                        </item>
+                        <item name="identifier" xsi:type="array">
+                            <item name="label" xsi:type="string">URL Key</item>
+                        </item>
+                        <item name="is_active" xsi:type="array">
+                            <item name="label" xsi:type="string">Status</item>
+                            <item name="cell_template" xsi:type="string">Loki_AdminComponents::grid/cell/status.phtml</item>
+                        </item>
+                        <item name="store_id" xsi:type="array">
+                            <item name="label" xsi:type="string">Store View</item>
+                            <item name="cell_template" xsi:type="string">Loki_AdminComponents::grid/cell/store_id.phtml</item>
+                        </item>
+                        <item name="creation_time" xsi:type="array">
+                            <item name="label" xsi:type="string">Created</item>
+                        </item>
+                        <item name="update_time" xsi:type="array">
+                            <item name="label" xsi:type="string">Modified</item>
+                        </item>
+                    </argument>
                 </arguments>
             </block>
         </referenceContainer>
