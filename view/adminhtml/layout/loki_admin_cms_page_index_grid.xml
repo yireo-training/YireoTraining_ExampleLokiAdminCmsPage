@@ -34,10 +34,12 @@
                         <item name="title" xsi:type="array">
                             <item name="code" xsi:type="string">title</item>
                             <item name="label" xsi:type="string">Title</item>
+                            <item name="condition_type" xsi:type="string">like</item>
                         </item>
                         <item name="url_key" xsi:type="array">
                             <item name="code" xsi:type="string">url_key</item>
                             <item name="label" xsi:type="string">URL Key</item>
+                            <item name="condition_type" xsi:type="string">like</item>
                         </item>
                     </argument>
                     <argument name="columns" xsi:type="array">
