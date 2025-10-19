@@ -25,6 +25,21 @@
                             <item name="primary" xsi:type="boolean">true</item>
                         </item>
                     </argument>
+                    <argument name="grid_filters" xsi:type="array">
+                        <item name="id" xsi:type="array">
+                            <item name="code" xsi:type="string">id</item>
+                            <item name="label" xsi:type="string">ID</item>
+                            <!--<item name="field_type" xsi:type="string">from_to</item>-->
+                        </item>
+                        <item name="title" xsi:type="array">
+                            <item name="code" xsi:type="string">title</item>
+                            <item name="label" xsi:type="string">Title</item>
+                        </item>
+                        <item name="url_key" xsi:type="array">
+                            <item name="code" xsi:type="string">url_key</item>
+                            <item name="label" xsi:type="string">URL Key</item>
+                        </item>
+                    </argument>
                     <argument name="columns" xsi:type="array">
                         <item name="page_id" xsi:type="array">
                             <item name="label" xsi:type="string">ID</item>
