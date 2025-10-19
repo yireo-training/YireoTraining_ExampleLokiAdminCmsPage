@@ -44,6 +44,12 @@
                             <item name="condition_type" xsi:type="string">in</item>
                             <item name="options" xsi:type="object">Loki\AdminComponents\ViewModel\Options\StoreViewOptions</item>
                         </item>
+                        <item name="is_active" xsi:type="array">
+                            <item name="label" xsi:type="string">Status</item>
+                            <item name="field_type" xsi:type="string">select</item>
+                            <item name="condition_type" xsi:type="string">equals</item>
+                            <item name="options" xsi:type="object">Loki\AdminComponents\ViewModel\Options\StatusOptions</item>
+                        </item>
                     </argument>
                     <argument name="columns" xsi:type="array">
                         <item name="page_id" xsi:type="array">
