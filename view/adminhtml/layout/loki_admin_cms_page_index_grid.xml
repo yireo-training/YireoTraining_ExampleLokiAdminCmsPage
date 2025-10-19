@@ -41,6 +41,7 @@
                         <item name="store_id" xsi:type="array">
                             <item name="label" xsi:type="string">Store View</item>
                             <item name="field_type" xsi:type="string">select</item>
+                            <item name="condition_type" xsi:type="string">in</item>
                             <item name="options" xsi:type="object">Loki\AdminComponents\ViewModel\Options\StoreViewOptions</item>
                         </item>
                     </argument>
