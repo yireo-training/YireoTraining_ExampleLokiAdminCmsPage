@@ -28,6 +28,7 @@
                     <argument name="grid_filters" xsi:type="array">
                         <item name="page_id" xsi:type="array">
                             <item name="label" xsi:type="string">ID</item>
+                            <item name="condition_type" xsi:type="string">from_to</item>
                             <item name="field_type" xsi:type="string">from_to</item>
                         </item>
                         <item name="title" xsi:type="array">
