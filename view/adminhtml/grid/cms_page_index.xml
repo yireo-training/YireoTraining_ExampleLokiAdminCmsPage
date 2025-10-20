@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<grid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <namespace>cms_page_listing</namespace>
+    <provider>Magento\Cms\Model\PageRepository</provider>
+    <searchableFields>identifier,title</searchableFields>
+    <buttonActions>
+        <buttonAction id="new">
+            <method>newAction</method>
+            <label>Add New Page</label>
+            <primary>true</primary>
+        </buttonAction>
+    </buttonActions>
+
+    <gridFilters>
+        <gridFilter column="page_id">
+            <label>ID</label>
+            <conditionType>from_to</conditionType>
+            <fieldType>from_to</fieldType>
+        </gridFilter>
+    </gridFilters>
+
+    <massActions>
+        <massAction id="enable">
+            <label>Enable</label>
+            <url>cms/page/massEnable</url>
+        </massAction>
+    </massActions>
+
+    <columns>
+        <column name="page_id">
+            <label>ID</label>
+        </column>
+    </columns>
+</grid>
