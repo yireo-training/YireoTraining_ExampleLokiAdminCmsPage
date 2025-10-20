@@ -68,6 +68,27 @@
                         </item>
                     </argument>
 
+                    <argument name="mass_actions" xsi:type="array">
+                        <item name="enable" xsi:type="array">
+                            <item name="label" xsi:type="string">Enable</item>
+                            <item name="url" xsi:type="string">catalog/product/massStatus</item>
+                            <item name="url_parameters" xsi:type="array">
+                                <item name="status" xsi:type="number">1</item>
+                            </item>
+                        </item>
+                        <item name="disable" xsi:type="array">
+                            <item name="label" xsi:type="string">Enable</item>
+                            <item name="url" xsi:type="string">catalog/product/massStatus</item>
+                            <item name="url_parameters" xsi:type="array">
+                                <item name="status" xsi:type="number">0</item>
+                            </item>
+                        </item>
+                        <item name="delete" xsi:type="array">
+                            <item name="label" xsi:type="string">Delete</item>
+                            <item name="url" xsi:type="string">catalog/product/massDelete</item>
+                        </item>
+                    </argument>
+
                     <argument name="columns" xsi:type="array">
                         <item name="page_id" xsi:type="array">
                             <item name="label" xsi:type="string">ID</item>
