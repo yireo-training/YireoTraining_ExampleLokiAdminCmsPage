@@ -14,10 +14,12 @@
                 <arguments>
                     <argument name="namespace" xsi:type="string">cms_page_listing</argument>
                     <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
+
                     <argument name="searchable_fields" xsi:type="array">
                         <item name="identifier" xsi:type="string">identifier</item>
                         <item name="title" xsi:type="string">title</item>
                     </argument>
+
                     <argument name="button_actions" xsi:type="array">
                         <item name="new" xsi:type="array">
                             <item name="method" xsi:type="string">newAction</item>
@@ -25,11 +27,24 @@
                             <item name="primary" xsi:type="boolean">true</item>
                         </item>
                     </argument>
+
                     <argument name="grid_filters" xsi:type="array">
                         <item name="page_id" xsi:type="array">
                             <item name="label" xsi:type="string">ID</item>
                             <item name="condition_type" xsi:type="string">from_to</item>
                             <item name="field_type" xsi:type="string">from_to</item>
+                        </item>
+                        <item name="creation_time" xsi:type="array">
+                            <item name="label" xsi:type="string">Created</item>
+                            <item name="condition_type" xsi:type="string">from_to</item>
+                            <item name="field_type" xsi:type="string">from_to</item>
+                            <item name="input_type" xsi:type="string">date</item>
+                        </item>
+                        <item name="update_time" xsi:type="array">
+                            <item name="label" xsi:type="string">Modified</item>
+                            <item name="condition_type" xsi:type="string">from_to</item>
+                            <item name="field_type" xsi:type="string">from_to</item>
+                            <item name="input_type" xsi:type="string">date</item>
                         </item>
                         <item name="title" xsi:type="array">
                             <item name="label" xsi:type="string">Title</item>
@@ -52,6 +67,7 @@
                             <item name="options" xsi:type="object">Loki\AdminComponents\ViewModel\Options\StatusOptions</item>
                         </item>
                     </argument>
+
                     <argument name="columns" xsi:type="array">
                         <item name="page_id" xsi:type="array">
                             <item name="label" xsi:type="string">ID</item>
