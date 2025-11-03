@@ -19,5 +19,8 @@
             "YireoTraining\\ExampleLokiAdminCmsPage\\": ""
         }
     },
-    "keywords": []
+    "keywords": [
+        "loki-components",
+        "loki-example"
+    ]
 }
