@@ -17,6 +17,11 @@
                     <argument name="resource_model" xsi:type="string">Magento\Cms\Model\ResourceModel\Page</argument>
                     <argument name="factory" xsi:type="string">Magento\Cms\Model\PageFactory</argument>
                     <argument name="index_url" xsi:type="string">loki_admin_cms_page/index/grid</argument>
+                    <argument name="fields" xsi:type="array">
+                        <item name="content" xsi:type="array">
+                            <item name="field_type" xsi:type="string">editor</item>
+                        </item>
+                    </argument>
                 </arguments>
             </block>
         </referenceContainer>
