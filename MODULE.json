@@ -1,0 +1,9 @@
+{
+    "module_name": "YireoTraining_ExampleLokiAdminCmsPage",
+    "composer_name": "yireo-training/magento2-example-loki-admin-cms-page",
+    "sequence": [
+        "Magento_Cms",
+        "Magento_Backend",
+        "Loki_AdminComponents"
+    ]
+}
