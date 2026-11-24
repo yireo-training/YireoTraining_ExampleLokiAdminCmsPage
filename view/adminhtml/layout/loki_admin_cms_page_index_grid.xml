@@ -13,7 +13,11 @@
                 template="Loki_AdminComponents::grid.phtml">
                 <arguments>
                     <argument name="namespace" xsi:type="string">cms_page_listing</argument>
-                    <argument name="provider" xsi:type="string">Magento\Cms\Model\PageRepository</argument>
+                    <argument name="provider" xsi:type="string">Magento\Cms\Api\PageRepositoryInterface</argument>
+                    <argument name="provider_handler" xsi:type="string">repository</argument>
+                    <argument name="acl_resource" xsi:type="string">Magento_Cms::page</argument>
+                    <argument name="save_acl_resource" xsi:type="string">Magento_Cms::save</argument>
+                    <argument name="delete_acl_resource" xsi:type="string">Magento_Cms::page_delete</argument>
 
                     <argument name="searchable_fields" xsi:type="array">
                         <item name="identifier" xsi:type="string">identifier</item>
@@ -72,14 +76,17 @@
                         <item name="enable" xsi:type="array">
                             <item name="label" xsi:type="string">Enable</item>
                             <item name="url" xsi:type="string">cms/page/massEnable</item>
+                            <item name="acl_resource" xsi:type="string">Magento_Cms::save</item>
                         </item>
                         <item name="disable" xsi:type="array">
                             <item name="label" xsi:type="string">Disable</item>
                             <item name="url" xsi:type="string">cms/page/massDisable</item>
+                            <item name="acl_resource" xsi:type="string">Magento_Cms::save</item>
                         </item>
                         <item name="delete" xsi:type="array">
                             <item name="label" xsi:type="string">Delete</item>
                             <item name="url" xsi:type="string">cms/page/massDelete</item>
+                            <item name="acl_resource" xsi:type="string">Magento_Cms::page_delete</item>
                         </item>
                     </argument>
 
