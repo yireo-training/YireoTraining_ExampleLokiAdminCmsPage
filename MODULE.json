@@ -5,5 +5,7 @@
         "Magento_Cms",
         "Magento_Backend",
         "Loki_AdminComponents"
-    ]
+    ],
+    "phpcs_severity": "7",
+    "phpstan_level": "3"
 }
