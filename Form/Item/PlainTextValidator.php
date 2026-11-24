@@ -22,7 +22,7 @@ class PlainTextValidator implements ItemValidatorInterface
         $errors = [];
         foreach (self::PLAIN_TEXT_FIELDS as $field) {
             $value = $item->getData($field);
-            if (is_scalar($value) && preg_match('/[<>]/', (string)$value)) {
+            if (is_scalar($value) && strpbrk((string)$value, '<>') !== false) {
                 $errors[] = (string)__('The field "%1" may not contain HTML.', $field);
             }
         }
