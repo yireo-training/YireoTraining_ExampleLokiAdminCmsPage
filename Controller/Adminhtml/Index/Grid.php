@@ -5,6 +5,7 @@ namespace YireoTraining\ExampleLokiAdminCmsPage\Controller\Adminhtml\Index;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Backend\Model\View\Result\Page;
+use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\View\Result\PageFactory as ResultPageFactory;
 
 /**
@@ -12,7 +13,7 @@ use Magento\Framework\View\Result\PageFactory as ResultPageFactory;
  *
  * @package YireoTraining\ExampleLokiAdminCmsPage\Controller\Index
  */
-class Grid extends Action
+class Grid extends Action implements HttpGetActionInterface
 {
     /**
      * ACL resource
