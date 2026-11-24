@@ -58,11 +58,11 @@ class PageItemConvertorTest extends TestCase
         $page = $this->getConvertor()->beforeSave($item);
 
         $this->assertInstanceOf(Page::class, $page);
-        $this->assertNull($page->getId());
+        $this->assertEmpty($page->getId());
         $this->assertSame('New page', $page->getTitle());
         $this->assertSame('new-page', $page->getIdentifier());
-        $this->assertNull($page->getLayoutUpdateXml());
-        $this->assertNull($page->getCustomTheme());
+        $this->assertEmpty($page->getLayoutUpdateXml());
+        $this->assertEmpty($page->getCustomTheme());
         $this->assertNull($page->getData('orig_data'));
         $this->assertNull($page->getOrigData());
     }
