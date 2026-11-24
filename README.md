@@ -22,6 +22,11 @@ Note that this example module is not about the usage, it is about the code. See 
 
 ![Screenshot of grid in action](loki-admin-grid-cms-pages.png)
 
+### Permissions
+Next to the ACL resources of this module (**Content > Elements > Pages > Pages (Loki)**), saving requires `Magento_Cms::save`, deleting requires `Magento_Cms::page_delete` and changing design settings requires `Magento_Cms::save_design`. Only the content and SEO fields of a page can be edited; layout updates and design settings are kept as they are.
+
+Adobe Commerce admin role scopes (website or store restrictions of AdminGws) are not supported by this example module: an admin user with access to this page can edit pages of every store view.
+
 ## Current status
 
 <!-- badges.test.start -->
