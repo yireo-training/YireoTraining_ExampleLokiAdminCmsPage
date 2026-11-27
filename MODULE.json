@@ -2,9 +2,9 @@
     "module_name": "YireoTraining_ExampleLokiAdminCmsPage",
     "composer_name": "yireo-training/magento2-example-loki-admin-cms-page",
     "sequence": [
-        "Magento_Cms",
+        "Loki_AdminComponents",
         "Magento_Backend",
-        "Loki_AdminComponents"
+        "Magento_Cms"
     ],
     "phpcs_severity": "7",
     "phpstan_level": "4",
@@ -13,5 +13,44 @@
         "8.3",
         "8.4",
         "8.5"
-    ]
+    ],
+    "skip_magento_versions": [],
+    "skip_css_utils": false,
+    "modules": [
+        "Loki_AdminComponents",
+        "Loki_Base",
+        "Loki_Components",
+        "Loki_CssUtils",
+        "Magento_AdminNotification",
+        "Magento_Backend",
+        "Magento_Catalog",
+        "Magento_Cms",
+        "Magento_Config",
+        "Magento_Csp",
+        "Magento_Customer",
+        "Magento_Directory",
+        "Magento_Eav",
+        "Magento_Indexer",
+        "Magento_MediaGalleryUiApi",
+        "Magento_Payment",
+        "Magento_Quote",
+        "Magento_Rule",
+        "Magento_Sales",
+        "Magento_SalesSequence",
+        "Magento_Store",
+        "Magento_Theme",
+        "Magento_Ui",
+        "Magento_Variable",
+        "Yireo_CspUtilities"
+    ],
+    "components": [
+        "loki_admin_cms_page.form",
+        "loki_admin_cms_page.grid"
+    ],
+    "config": [],
+    "tests": {
+        "unit": 0,
+        "integration": 13,
+        "functional": 0
+    }
 }
